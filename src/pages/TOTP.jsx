@@ -41,19 +41,25 @@ export default function TOTP() {
     {
       user: 'github',
       service: 'GitHub1',
-      secret: 'PX7ZSMD3ZWTAIPYY',
+      secret: '7KCADHIPSFFJ7F6A',
       token: '-'
     },
     {
       user: 'github2',
       service: 'GitHub',
-      secret: 'PX7ZSMD3ZWTAIPYZ',
+      secret: '7KCADHIPSFFJ7F6B',
       token: '-'
     },
     {
       user: 'github3',
       service: 'GitHub3',
-      secret: 'PX7ZSMD3ZWTAIPYX',
+      secret: '7KCADHIPSFFJ7F6C',
+      token: '-'
+    },
+    {
+      user: 'gmail',
+      service: 'google',
+      secret: '7KCADHIPSFFJ7F6D',
       token: '-'
     },
   ];
@@ -106,7 +112,7 @@ export default function TOTP() {
                       {`${el.user} | ${el.service}`}
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                      {el.secret}
+                      {el.token}
                     </Typography>
                     <Typography>
                       {el.token}
